@@ -1,8 +1,18 @@
-jumbotron {
+.jumbotron {
   text-align: center;
+  background-color: rgb(154, 154, 180);
 }
 
 body {
-  background-color: black;
-  background-image: image()
+  background-image: url("Images/friends.jpg");
+}
+
+.links {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  /* color: white; */
+  text-align: center;
 }
