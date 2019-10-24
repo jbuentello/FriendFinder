@@ -5,7 +5,7 @@ var bodyParser = require("body-parser");
 
 //Express configuration
 var app = express();
-var PORT = process.env.PORT;
+var PORT = process.env.PORT || 8080;
 
 //Directory for CSS files
 app.use(express.static(__dirname + "/app/css"));
@@ -20,6 +20,6 @@ require(path.join(__dirname, './app/routing/apiRoutes'))(app);
 require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 
 app.listen(PORT, function() {
-	console.log("App listening on PORT: " + PORT);
+	console.log("Application is listening on PORT: " + PORT);
 });
 
