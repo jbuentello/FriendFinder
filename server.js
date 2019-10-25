@@ -8,7 +8,7 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 //Directory for CSS files
-app.use(express.static(__dirname + "/app/css"));
+app.use(express.static(__dirname + "/app/public"));
 
 //Middleware for parsing JSON
 app.use(bodyParser.json());
